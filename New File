@@ -1,0 +1,23 @@
+class Main
+{
+  public static void main(String[] args)
+  {
+      Integer ob  = new Integer(11);
+      String a=ob.toString();
+      StringBuilder obj = new StringBuilder(a);
+      obj.reverse();
+      String c= obj.toString();
+      
+      System.out.println(c);   
+
+      if(a.equals(c))
+      {
+        System.out.println("palindrome");
+      }
+      else
+      {
+System.out.println(" not palindrome");
+
+      }
+  }
+}

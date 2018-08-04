@@ -1,0 +1,44 @@
+/*package whatever //do not write package name here */
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+public class GFG 
+{
+	public static void main (String[] args) 
+	{
+		Scanner obj = new Scanner(System.in);
+		
+		    int len=obj.nextInt();
+		      int x=obj.nextInt();
+		     int a[] = new int[len];
+		      int b[] = new int[len];
+		     for(int i=0;i<len;i++)
+		     {
+		         a[i]=obj.nextInt();
+		     }
+		     for(int i=0;i<len;i++)
+		         {
+		         int m =(a[i]+x)/2;
+		         int count=0;
+		         for(int k=0;k<len;k++)
+		              {
+		             if(a[k]==m)
+		               {
+		                 count++;
+		               }
+		              }
+		         for(int y=0;y<len;y++)
+		           {
+		             if(a[y]==m)
+		             {
+		                 b[y]=count;
+		             }
+		           }
+		        }
+		  for(int i=0;i<len;i++)
+		  {
+		      System.out.print(b[i]+" ");
+		  }
+	
+	}
+}
